@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CARLOTO GAMES — catálogo gamer futurista. Descubra jogos, veja detalhes e encontre lojas oficiais.">
+  <title>CARLOTO GAMES | Próxima fase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Carloto Games início">
+      <span class="brand-mark">CG</span>
+      <span>CARLOTO<span class="brand-accent"> GAMES</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Jogos</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <a class="header-cta" href="#catalogo">Explorar catálogo <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> CENTRAL GAMER ONLINE</p>
+        <h1>SUA PRÓXIMA<br><span>FASE COMEÇA</span><br>AQUI.</h1>
+        <p class="hero-description">Descubra grandes universos, entre em campo e encare desafios. Explore o catálogo da CARLOTO GAMES.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalogo">Explorar jogos <span>→</span></a>
+          <a class="button button-ghost" href="#sobre">Conheça a loja</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>03</strong><span>DESTAQUES</span></div>
+          <div><strong>100%</strong><span>VIBE GAMER</span></div>
+          <div><strong>∞</strong><span>AVENTURAS</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Arte abstrata futurista gamer">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core"><span>CG</span><small>LEVEL UP</small></div>
+        <div class="floating-tag tag-top">PLAYER 01</div>
+        <div class="floating-tag tag-bottom">SYSTEM ONLINE</div>
+        <div class="scanline"></div>
+      </div>
+    </section>
+
+    <section class="catalog-section section-wrap" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELEÇÃO CARLOTO</p><h2>JOGOS EM <span>DESTAQUE</span></h2></div>
+        <p class="section-note">Escolha seu próximo universo.<br>Confira a descrição e as informações de cada jogo.</p>
+      </div>
+      <div class="filter-row">
+        <button class="filter-chip active" data-filter="todos">Todos</button>
+        <button class="filter-chip" data-filter="acao">Ação</button>
+        <button class="filter-chip" data-filter="esporte">Esportes</button>
+        <span class="catalog-count" id="catalogCount">03 JOGOS</span>
+      </div>
+
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card" data-category="acao">
+          <div class="game-art art-gta"><span class="art-kicker">OPEN WORLD</span><span class="art-title">GRAND<br>THEFT<br>AUTO V</span><span class="art-number">V</span></div>
+          <div class="game-info">
+            <div class="game-meta"><span>AÇÃO / MUNDO ABERTO</span><span class="rating">18+</span></div>
+            <h3>Grand Theft Auto V</h3>
+            <p>Explore Los Santos em uma aventura de mundo aberto com três protagonistas, missões, veículos e muitas possibilidades.</p>
+            <div class="card-bottom"><span class="platform">PC · CONSOLES*</span><button class="details-button" data-game="gta">Ver detalhes <span>↗</span></button></div>
+          </div>
+        </article>
+
+        <article class="game-card" data-category="esporte">
+          <div class="game-art art-fc"><span class="art-kicker">FOOTBALL / SPORTS</span><span class="art-title">EA<br>SPORTS<br>FC 27</span><span class="art-number">27</span></div>
+          <div class="game-info">
+            <div class="game-meta"><span>ESPORTE / FUTEBOL</span><span class="rating rating-free">VER CLASSIFICAÇÃO</span></div>
+            <h3>EA SPORTS FC 27</h3>
+            <p>Entre em campo, monte seu time e viva partidas de futebol. Modos, times e recursos dependem da edição e plataforma.</p>
+            <div class="card-bottom"><span class="platform">PLATAFORMAS A CONFIRMAR</span><button class="details-button" data-game="fc">Ver detalhes <span>↗</span></button></div>
+          </div>
+        </article>
+
+        <article class="game-card" data-category="esporte">
+          <div class="game-art art-ufc"><span class="art-kicker">FIGHT NIGHT</span><span class="art-title">UFC<br><span>FIGHT</span><br>ARENA</span><span class="art-number">X</span></div>
+          <div class="game-info">
+            <div class="game-meta"><span>LUTA / ESPORTE</span><span class="rating">VER CLASSIFICAÇÃO</span></div>
+            <h3>EA SPORTS UFC</h3>
+            <p>Dispute combates em um jogo de luta esportiva, escolhendo atletas e estratégias. Confira qual edição está disponível.</p>
+            <div class="card-bottom"><span class="platform">CONSOLES*</span><button class="details-button" data-game="ufc">Ver detalhes <span>↗</span></button></div>
+          </div>
+        </article>
+      </div>
+      <p class="fine-print">* Plataformas, disponibilidade, preço e classificação indicativa podem variar por edição e região. Consulte a loja oficial antes de qualquer compra.</p>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="section-wrap about-inner">
+        <div class="about-symbol"><span>CG</span><i></i></div>
+        <div><p class="eyebrow">SOBRE A CARLOTO GAMES</p><h2>MAIS QUE JOGAR.<br><span>VIVER A EXPERIÊNCIA.</span></h2>
+          <p>CARLOTO GAMES é um projeto de catálogo para quem curte videogames. Aqui você encontra uma seleção de títulos, explicações rápidas e caminhos para consultar informações nas lojas oficiais.</p>
+          <a class="button button-primary" href="#catalogo">Ver catálogo <span>→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#inicio"><span class="brand-mark">CG</span><span>CARLOTO<span class="brand-accent"> GAMES</span></span></a>
+    <p>© <span id="year"></span> CARLOTO GAMES. Projeto demonstrativo independente.</p>
+    <a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a>
+  </footer>
+
+  <div class="modal-backdrop" id="gameModal" aria-hidden="true">
+    <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <p class="eyebrow">FICHA DO JOGO</p>
+      <h2 id="modalTitle">Título do jogo</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-facts" id="modalFacts"></div>
+      <p class="modal-warning" id="modalWarning"></p>
+      <a class="button button-primary modal-store" id="storeLink" href="#" target="_blank" rel="noopener noreferrer">Consultar loja oficial ↗</a>
+      <small>O botão abre uma página de consulta. Esta demonstração não processa pagamentos nem vende jogos.</small>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
